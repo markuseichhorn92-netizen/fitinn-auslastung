@@ -1,9 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
-import dynamic from 'next/dynamic';
-
-const UtilizationChart = dynamic(() => import('@/components/UtilizationChart'), { ssr: false });
+import UtilizationChart from '@/components/UtilizationChart';
 
 interface UtilData {
   count: number;
